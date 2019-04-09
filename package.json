@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/1391020381/hey-ui/issues"
   },
-  "homepage": "https://github.com/1391020381/hey-ui#readme"
+  "homepage": "https://github.com/1391020381/hey-ui#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
