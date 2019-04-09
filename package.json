@@ -24,5 +24,8 @@
   "homepage": "https://github.com/1391020381/hey-ui#readme",
   "dependencies": {
     "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
   }
 }
