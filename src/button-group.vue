@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'GuluButtonGroup',
+  name: 'ButtonGroup',
   data () {
     return {
     }

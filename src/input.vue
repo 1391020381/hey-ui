@@ -22,7 +22,7 @@
 <script>
 import Icon from './icon'
 export default {
-  name: 'GuluInput',
+  name: 'Input',
   props: {
     value: {
       type: String

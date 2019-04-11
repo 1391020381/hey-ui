@@ -18,7 +18,7 @@
 <script>
 import Icon from './icon'
 export default {
-  name:'GuluButton',
+  name:'Button',
   props: {
     icon: {},
     loading: {
