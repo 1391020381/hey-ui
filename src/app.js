@@ -10,6 +10,7 @@ import Header from './header'
 import Sider from './sider'
 import Content from './content'
 import Footer from './footer'
+import Plugin from './plugin'
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
 Vue.component('g-button-group', ButtonGroup)
@@ -21,6 +22,7 @@ Vue.component('g-header',Header)
 Vue.component('g-content',Content)
 Vue.component('g-footer',Footer)
 Vue.component('g-sider',Sider)
+Vue.use(Plugin)
 new Vue({
   el: '#app',
   data: {
@@ -32,7 +34,20 @@ new Vue({
   methods: {
     log(text) {
       console.log(text)
-    }
+    },
+    showToast(position){
+      this.$toast('测试toast',{
+        position,
+        enableHtml:false,
+        closeButton:{
+          text:'确定',
+          callBack () {
+            console.log('已确定')
+          }
+        },
+        autoClose:3
+      })
+    },
   }
 })
 
