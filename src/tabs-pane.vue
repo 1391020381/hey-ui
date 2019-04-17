@@ -1,6 +1,6 @@
 <template>
-  <div class="tabs-pane">
-
+  <div class="tabs-pane" :class="classes" v-if="active">
+    <slot></slot>
   </div>
 </template>
 

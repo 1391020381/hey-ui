@@ -1,6 +1,6 @@
 <template>
-  <div class="tabs-item" @click="onClick" :class="classes" :data-nam="name">
-
+  <div class="tabs-item" @click="onClick" :class="classes" :data-name="name">
+    <slot></slot>
   </div>
 </template>
 
@@ -56,5 +56,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$blue: blue;
+  $disabled-text-color: grey;
+  .tabs-item {
+    flex-shrink: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
+    &.active {
+      color: $blue;
+      font-weight: bold;
+    }
+    &.disabled {
+      color: $disabled-text-color;
+      cursor: not-allowed;
+    }
+  }
 </style>
